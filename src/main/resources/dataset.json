@@ -1,5 +1,5 @@
 {
-  "model_path": "~/pycharm-plugin-evaluator/script-model.py",
+  "model_path": "script-model.py",
   "data": [
     {
       "input": "What is the capital of France?",
