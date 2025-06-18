@@ -1,13 +1,13 @@
 <idea-plugin>
     <id>com.evaluator.plugin</id>
-    <name>My PyCharm ToolWindow Plugin</name>
+    <name>PyCharm Evaluator Plugin</name>
     <version>1.0</version>
-    <vendor email="your@email.com" url="http://your.url">Your Name</vendor>
+    <vendor email="griefgrr@gmail.com" url="https://github.com/RomanKhabarov">Roman Khabarov</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <description>
-        A simple plugin with a tool window, text field, and button.
+        The plugin runs model script and compares script output and reference output
     </description>
 
     <extensions defaultExtensionNs="com.intellij">
