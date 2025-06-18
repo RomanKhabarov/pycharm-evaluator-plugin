@@ -13,6 +13,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.project.DumbAwareAction;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -56,12 +57,16 @@ public class RunAction extends DumbAwareAction {
                 EvaluationDataSet dataset = loadDataService.loadDatasetFromProjectRoot(project, "dataset.json");
                 String promptTemplate = loadDataService.loadPromptTemplateFromResource("evaluation_prompt.txt");
                 List<EvaluationViewItem> items = generateViewItems(dataset);
-
                 return new DataContext(dataset, promptTemplate, items);
             },
             (DataContext data) -> {
                 tableModel.setItems(data.items());
                 tableModel.fireTableDataChanged();
+                if (data.dataset() == null) {
+                    Messages.showInfoMessage(
+                            "Please make sure that the `dataset.json` file exists in the root directory of the project",
+                            "Dataset Can't Be Loaded");
+                }
                 return null;
             },
             (DataContext data) -> {

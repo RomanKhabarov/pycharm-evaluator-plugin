@@ -41,7 +41,7 @@ public class FileToObjectService {
         try (var stream = getClass().getClassLoader().getResourceAsStream(path)) {
             return objectMapper.readValue(stream, EvaluationDataSet.class);
         } catch (IOException e) {
-            throw new UncheckedIOException("Error while reading file", e);
+            return null;
         }
     }
 
@@ -54,7 +54,7 @@ public class FileToObjectService {
         try (var stream = Files.newInputStream(path)) {
             return objectMapper.readValue(stream, EvaluationDataSet.class);
         } catch (IOException e) {
-            throw new UncheckedIOException("Error while reading file", e);
+            return null;
         }
     }
 
