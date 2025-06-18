@@ -53,8 +53,8 @@ public class RunAction extends DumbAwareAction {
             project,
             () -> {
                 FileToObjectService loadDataService = project.getService(FileToObjectService.class);
-                EvaluationDataSet dataset = loadDataService.loadDataset("dataset.json");
-                String promptTemplate = loadDataService.loadPromptTemplate("evaluation_prompt.txt");
+                EvaluationDataSet dataset = loadDataService.loadDatasetFromProjectRoot(project, "dataset.json");
+                String promptTemplate = loadDataService.loadPromptTemplateFromResource("evaluation_prompt.txt");
                 List<EvaluationViewItem> items = generateViewItems(dataset);
 
                 return new DataContext(dataset, promptTemplate, items);
