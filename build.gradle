@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij.platform' version '2.6.0'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+group = 'com.evaluator'
+version = '1.0.0'
+
+java {
+}
+
+repositories {
+    mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
+}
+
+dependencies {
+    intellijPlatform {
+        pycharmCommunity("2025.1")
+        bundledPlugin("PythonCore")
+    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+kotlin {
+    jvmToolchain(17)
+}

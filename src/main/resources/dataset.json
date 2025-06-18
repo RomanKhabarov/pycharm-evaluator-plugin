@@ -1,0 +1,339 @@
+{
+  "model_path": "~/pycharm-plugin-evaluator/script-model.py",
+  "data": [
+    {
+      "input": "What is the capital of France?",
+      "reference_output": "Paris"
+    }, {
+      "input": "What is the largest planet in our solar system?",
+      "reference_output": "Jupiter"
+    }, {
+      "input": "Who wrote 'To Kill a Mockingbird'?",
+      "reference_output": "Harper Lee"
+    }, {
+      "input": "What is the boiling point of water?",
+      "reference_output": "100 degrees Celsius"
+    }, {
+      "input": "What is the chemical symbol for gold?",
+      "reference_output": "Au"
+    }, {
+      "input": "What is the smallest country in the world?",
+      "reference_output": "Vatican City"
+    }, {
+      "input": "Who painted the Mona Lisa?",
+      "reference_output": "Leonardo da Vinci"
+    }, {
+      "input": "What is the longest river in the world?",
+      "reference_output": "Nile River"
+    }, {
+      "input": "What is the capital of Japan?",
+      "reference_output": "Tokyo"
+    }, {
+      "input": "How many continents are there?",
+      "reference_output": "7"
+    }, {
+      "input": "What is the hardest natural substance?",
+      "reference_output": "Diamond"
+    }, {
+      "input": "Who invented the telephone?",
+      "reference_output": "Alexander Graham Bell"
+    }, {
+      "input": "What is the largest ocean on Earth?",
+      "reference_output": "Pacific Ocean"
+    }, {
+      "input": "What year did World War II end?",
+      "reference_output": "1945"
+    }, {
+      "input": "What is the chemical formula for water?",
+      "reference_output": "H2O"
+    }, {
+      "input": "Who wrote Romeo and Juliet?",
+      "reference_output": "William Shakespeare"
+    }, {
+      "input": "What is the tallest mountain in the world?",
+      "reference_output": "Mount Everest"
+    }, {
+      "input": "What is the speed of light?",
+      "reference_output": "299,792,458 meters per second"
+    }, {
+      "input": "What is the capital of Australia?",
+      "reference_output": "Canberra"
+    }, {
+      "input": "How many bones are in the human body?",
+      "reference_output": "206"
+    }, {
+      "input": "What is the largest mammal?",
+      "reference_output": "Blue whale"
+    }, {
+      "input": "Who discovered penicillin?",
+      "reference_output": "Alexander Fleming"
+    }, {
+      "input": "What is the freezing point of water?",
+      "reference_output": "0 degrees Celsius"
+    }, {
+      "input": "What is the currency of the United Kingdom?",
+      "reference_output": "Pound Sterling"
+    }, {
+      "input": "How many hearts does an octopus have?",
+      "reference_output": "3"
+    }, {
+      "input": "What is the most abundant gas in Earth's atmosphere?",
+      "reference_output": "Nitrogen"
+    }, {
+      "input": "Who was the first person to walk on the moon?",
+      "reference_output": "Neil Armstrong"
+    }, {
+      "input": "What is the largest desert in the world?",
+      "reference_output": "Sahara Desert"
+    }, {
+      "input": "What is the chemical symbol for iron?",
+      "reference_output": "Fe"
+    }, {
+      "input": "How many chambers does a human heart have?",
+      "reference_output": "4"
+    }, {
+      "input": "What is the capital of Canada?",
+      "reference_output": "Ottawa"
+    }, {
+      "input": "Who composed The Four Seasons?",
+      "reference_output": "Antonio Vivaldi"
+    }, {
+      "input": "What is the smallest planet in our solar system?",
+      "reference_output": "Mercury"
+    }, {
+      "input": "What is the study of earthquakes called?",
+      "reference_output": "Seismology"
+    }, {
+      "input": "How many sides does a hexagon have?",
+      "reference_output": "6"
+    }, {
+      "input": "What is the largest bird in the world?",
+      "reference_output": "Ostrich"
+    }, {
+      "input": "Who wrote '1984'?",
+      "reference_output": "George Orwell"
+    }, {
+      "input": "What is the hottest planet in our solar system?",
+      "reference_output": "Venus"
+    }, {
+      "input": "What is the capital of Brazil?",
+      "reference_output": "Brasília"
+    }, {
+      "input": "How many strings does a standard guitar have?",
+      "reference_output": "6"
+    }, {
+      "input": "What is the longest bone in the human body?",
+      "reference_output": "Femur"
+    }, {
+      "input": "Who painted Starry Night?",
+      "reference_output": "Vincent van Gogh"
+    }, {
+      "input": "What is the square root of 64?",
+      "reference_output": "8"
+    }, {
+      "input": "What is the largest island in the world?",
+      "reference_output": "Greenland"
+    }, {
+      "input": "How many minutes are in an hour?",
+      "reference_output": "60"
+    }, {
+      "input": "What is the chemical symbol for sodium?",
+      "reference_output": "Na"
+    }, {
+      "input": "Who invented the light bulb?",
+      "reference_output": "Thomas Edison"
+    }, {
+      "input": "What is the fastest land animal?",
+      "reference_output": "Cheetah"
+    }, {
+      "input": "What is the capital of Russia?",
+      "reference_output": "Moscow"
+    }, {
+      "input": "How many days are in a leap year?",
+      "reference_output": "366"
+    }, {
+      "input": "What is the largest country by land area?",
+      "reference_output": "Russia"
+    }, {
+      "input": "Who wrote 'Pride and Prejudice'?",
+      "reference_output": "Jane Austen"
+    }, {
+      "input": "What is the deepest ocean trench?",
+      "reference_output": "Mariana Trench"
+    }, {
+      "input": "How many teeth does an adult human have?",
+      "reference_output": "32"
+    }, {
+      "input": "What is the chemical symbol for oxygen?",
+      "reference_output": "O"
+    }, {
+      "input": "What is the smallest bone in the human body?",
+      "reference_output": "Stapes"
+    }, {
+      "input": "Who discovered gravity?",
+      "reference_output": "Isaac Newton"
+    }, {
+      "input": "What is the capital of Egypt?",
+      "reference_output": "Cairo"
+    }, {
+      "input": "How many planets are in our solar system?",
+      "reference_output": "8"
+    }, {
+      "input": "What is the largest organ in the human body?",
+      "reference_output": "Skin"
+    }, {
+      "input": "Who wrote 'The Great Gatsby'?",
+      "reference_output": "F. Scott Fitzgerald"
+    }, {
+      "input": "What is the formula for the area of a circle?",
+      "reference_output": "πr²"
+    }, {
+      "input": "What is the highest waterfall in the world?",
+      "reference_output": "Angel Falls"
+    }, {
+      "input": "How many years are in a decade?",
+      "reference_output": "10"
+    }, {
+      "input": "What is the chemical symbol for carbon?",
+      "reference_output": "C"
+    }, {
+      "input": "Who was the first President of the United States?",
+      "reference_output": "George Washington"
+    }, {
+      "input": "What is the capital of China?",
+      "reference_output": "Beijing"
+    }, {
+      "input": "How many legs does a spider have?",
+      "reference_output": "8"
+    }, {
+      "input": "What is the largest lake in the world?",
+      "reference_output": "Caspian Sea"
+    }, {
+      "input": "Who composed Beethoven's 5th Symphony?",
+      "reference_output": "Ludwig van Beethoven"
+    }, {
+      "input": "What is the distance from Earth to the Sun?",
+      "reference_output": "93 million miles"
+    }, {
+      "input": "How many seconds are in a minute?",
+      "reference_output": "60"
+    }, {
+      "input": "What is the chemical symbol for hydrogen?",
+      "reference_output": "H"
+    }, {
+      "input": "What is the largest city in the world by population?",
+      "reference_output": "Tokyo"
+    }, {
+      "input": "Who wrote 'Hamlet'?",
+      "reference_output": "William Shakespeare"
+    }, {
+      "input": "What is the coldest planet in our solar system?",
+      "reference_output": "Neptune"
+    }, {
+      "input": "What is the capital of India?",
+      "reference_output": "New Delhi"
+    }, {
+      "input": "How many wheels does a bicycle have?",
+      "reference_output": "2"
+    }, {
+      "input": "What is the study of plants called?",
+      "reference_output": "Botany"
+    }, {
+      "input": "Who invented the airplane?",
+      "reference_output": "Wright Brothers"
+    }, {
+      "input": "What is the largest muscle in the human body?",
+      "reference_output": "Gluteus maximus"
+    }, {
+      "input": "What is the square of 12?",
+      "reference_output": "144"
+    }, {
+      "input": "What is the capital of Germany?",
+      "reference_output": "Berlin"
+    }, {
+      "input": "How many colors are in a rainbow?",
+      "reference_output": "7"
+    }, {
+      "input": "What is the chemical symbol for silver?",
+      "reference_output": "Ag"
+    }, {
+      "input": "What is the fastest bird in the world?",
+      "reference_output": "Peregrine falcon"
+    }, {
+      "input": "Who wrote 'The Catcher in the Rye'?",
+      "reference_output": "J.D. Salinger"
+    }, {
+      "input": "What is the largest volcano in the world?",
+      "reference_output": "Mauna Loa"
+    }, {
+      "input": "How many degrees are in a circle?",
+      "reference_output": "360"
+    }, {
+      "input": "What is the study of the weather called?",
+      "reference_output": "Meteorology"
+    }, {
+      "input": "What is the capital of Italy?",
+      "reference_output": "Rome"
+    }, {
+      "input": "How many eyes does a typical spider have?",
+      "reference_output": "8"
+    }, {
+      "input": "What is the chemical symbol for copper?",
+      "reference_output": "Cu"
+    }, {
+      "input": "Who painted The Last Supper?",
+      "reference_output": "Leonardo da Vinci"
+    }, {
+      "input": "What is the longest river in the United States?",
+      "reference_output": "Missouri River"
+    }, {
+      "input": "How many chambers does a bird's heart have?",
+      "reference_output": "4"
+    }, {
+      "input": "What is the study of stars called?",
+      "reference_output": "Astronomy"
+    }, {
+      "input": "What is the capital of Spain?",
+      "reference_output": "Madrid"
+    }, {
+      "input": "How many sides does a triangle have?",
+      "reference_output": "3"
+    }, {
+      "input": "What is the chemical symbol for lead?",
+      "reference_output": "Pb"
+    }, {
+      "input": "Who wrote 'One Hundred Years of Solitude'?",
+      "reference_output": "Gabriel García Márquez"
+    }, {
+      "input": "What is the smallest ocean?",
+      "reference_output": "Arctic Ocean"
+    }, {
+      "input": "How many millennia are in 2000 years?",
+      "reference_output": "2"
+    }, {
+      "input": "What is the study of human behavior called?",
+      "reference_output": "Psychology"
+    }, {
+      "input": "What is the capital of Mexico?",
+      "reference_output": "Mexico City"
+    }, {
+      "input": "How many wings does a bee have?",
+      "reference_output": "4"
+    }, {
+      "input": "What is the chemical symbol for tin?",
+      "reference_output": "Sn"
+    }, {
+      "input": "Who composed 'The Magic Flute'?",
+      "reference_output": "Wolfgang Amadeus Mozart"
+    }, {
+      "input": "What is the driest place on Earth?",
+      "reference_output": "Atacama Desert"
+    }, {
+      "input": "How many hours are in a day?",
+      "reference_output": "24"
+    }, {
+      "input": "What is the study of fossils called?",
+      "reference_output": "Paleontology"
+    }
+  ]
+}

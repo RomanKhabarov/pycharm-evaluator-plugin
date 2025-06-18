@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.evaluator.plugin</id>
+    <name>My PyCharm ToolWindow Plugin</name>
+    <version>1.0</version>
+    <vendor email="your@email.com" url="http://your.url">Your Name</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <description>
+        A simple plugin with a tool window, text field, and button.
+    </description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Evaluations"
+                    anchor="bottom"
+                    factoryClass="com.evaluator.plugin.EvaluationsWindowFactory"
+                    secondary="false"/>
+        <projectService serviceImplementation="com.evaluator.plugin.service.FileToObjectService" />
+        <projectService serviceImplementation="com.evaluator.plugin.service.EvaluationService" />
+    </extensions>
+</idea-plugin>
