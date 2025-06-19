@@ -45,10 +45,10 @@ public class EvaluationService implements Disposable {
             LOG.warn("Evaluation already in progress");
             return;
         }
-        controller.addScriptResultsConsumer(new ResultsListener.ScriptResultsListener(tableModel));
-        controller.addEvaluationResultsConsumer(new ResultsListener.EvaluationResultsListener(tableModel));
-        controller.addScriptResultsConsumer(new ScriptsFailedCompletionListener(dataset.data().size(), this::onEvaluationExecutionsCompleted));
-        controller.addEvaluationResultsConsumer(new EvaluationsCompletionListener(dataset.data().size(), this::onEvaluationExecutionsCompleted));
+        controller.addScriptExecutionListener(new ResultsListener.ScriptResultsListener(tableModel));
+        controller.addEvaluationExecutionListener(new ResultsListener.EvaluationResultsListener(tableModel));
+        controller.addScriptExecutionListener(new ScriptsFailedCompletionListener(dataset.data().size(), this::onEvaluationExecutionsCompleted));
+        controller.addEvaluationExecutionListener(new EvaluationsCompletionListener(dataset.data().size(), this::onEvaluationExecutionsCompleted));
         controller.runEvaluations();
     }
 

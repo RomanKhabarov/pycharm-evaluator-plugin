@@ -78,7 +78,7 @@ public class TaskExecutionService<I extends IdentifiableModel, O extends OutputM
         });
     }
 
-    public void addResultsConsumer(@NotNull TaskExecutionListener<O> consumer) {
+    public void addExecutionListener(@NotNull TaskExecutionListener<O> consumer) {
         executionListeners.add(consumer);
     }
 

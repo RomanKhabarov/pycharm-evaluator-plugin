@@ -24,15 +24,15 @@ public class ExecutionController implements AutoCloseable {
         this.dataset = dataset;
         this.scriptExecutionService = new TaskExecutionService<>(4, new ScriptTaskExecutor(), Duration.ofSeconds(2));
         this.evaluationExecutionService = new TaskExecutionService<>(6, new EvaluationTaskExecutor(System.getenv("OPENAI_API_KEY")), Duration.ofSeconds(2));
-        addScriptResultsConsumer(new ScriptExecutionListener(evaluationExecutionService, promptTemplate, 3));
+        addScriptExecutionListener(new ScriptExecutionListener(evaluationExecutionService, promptTemplate, 3));
     }
 
-    public void addScriptResultsConsumer(@NotNull TaskExecutionListener<ScriptOutputModel> consumer) {
-        this.scriptExecutionService.addResultsConsumer(consumer);
+    public void addScriptExecutionListener(@NotNull TaskExecutionListener<ScriptOutputModel> listener) {
+        this.scriptExecutionService.addExecutionListener(listener);
     }
 
-    public void addEvaluationResultsConsumer(@NotNull TaskExecutionListener<EvaluationOutputModel> consumer) {
-        this.evaluationExecutionService.addResultsConsumer(consumer);
+    public void addEvaluationExecutionListener(@NotNull TaskExecutionListener<EvaluationOutputModel> listener) {
+        this.evaluationExecutionService.addExecutionListener(listener);
     }
 
     public void runEvaluations() {
