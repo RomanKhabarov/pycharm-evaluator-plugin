@@ -17,7 +17,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 
-public class TaskExecutionService<I extends IdentifiableModel, O extends OutputModel> {
+public class TaskExecutionService<I extends IdentifiableModel, O extends OutputModel> implements AutoCloseable {
     @NotNull
     private final Logger logger;
     @NotNull
@@ -82,7 +82,8 @@ public class TaskExecutionService<I extends IdentifiableModel, O extends OutputM
         executionListeners.add(consumer);
     }
 
-    public void cancel() {
+    @Override
+    public void close() {
         executionListeners.clear();
         executorService.shutdownNow();
         try {

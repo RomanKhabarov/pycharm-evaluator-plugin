@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.time.Duration;
 
-public class ExecutionController {
+public class ExecutionController implements AutoCloseable {
     private static final Logger LOG = Logger.getInstance(ExecutionController.class);
 
     @NotNull
@@ -48,10 +48,11 @@ public class ExecutionController {
         LOG.info("Jobs submitted.");
     }
 
-    public void cancel() {
+    @Override
+    public void close() {
         LOG.info("Controller shutting down...");
-        scriptExecutionService.cancel();
-        evaluationExecutionService.cancel();
+        scriptExecutionService.close();
+        evaluationExecutionService.close();
         LOG.info("Controller shutdown finished.");
     }
 }

@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.evaluator.plugin</id>
     <name>PyCharm Evaluator Plugin</name>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <vendor email="griefgrr@gmail.com" url="https://github.com/RomanKhabarov">Roman Khabarov</vendor>
 
     <depends>com.intellij.modules.platform</depends>

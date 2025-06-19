@@ -58,7 +58,7 @@ public class EvaluationService implements Disposable {
             LOG.warn("Evaluation already stopped");
             return;
         }
-        controller.cancel();
+        controller.close();
     }
 
     private void onEvaluationExecutionsCompleted() {
