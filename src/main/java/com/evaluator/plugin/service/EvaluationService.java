@@ -43,6 +43,7 @@ public class EvaluationService implements Disposable {
         ExecutionController controller = new ExecutionController(dataset, promptTemplate);
         if (!executionControllerAtomicReference.compareAndSet(null, controller)) {
             LOG.warn("Evaluation already in progress");
+            controller.close();
             return;
         }
         controller.addScriptExecutionListener(new ResultsListener.ScriptResultsListener(tableModel));

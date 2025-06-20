@@ -28,7 +28,7 @@ Example dataset file:
 
 1. Go to the [GitHub Releases page](../../releases/latest)
 
-2. Download the file: `pycharm-evaluator-plugin-1.0.0.zip`
+2. Download the latest plugin file: `pycharm-evaluator-plugin-<version>.zip`
 
 3. In PyCharm:
     - Open **Settings / Preferences** → **Plugins**
