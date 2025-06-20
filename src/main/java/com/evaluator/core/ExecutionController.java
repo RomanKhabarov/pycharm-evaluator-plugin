@@ -36,7 +36,7 @@ public class ExecutionController implements AutoCloseable {
     }
 
     public void runEvaluations() {
-        LOG.info("Starting evaluation with dataset: " + dataset.modelPath());
+        LOG.info("Starting evaluation...");
         if (dataset.modelPath() != null) {
             for (int i = 0; i < dataset.data().size(); i++) {
                 EvaluationDataItem dataItem = dataset.data().get(i);

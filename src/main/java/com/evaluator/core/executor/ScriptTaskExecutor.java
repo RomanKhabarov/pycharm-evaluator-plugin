@@ -30,6 +30,7 @@ public class ScriptTaskExecutor implements TaskExecutor<ScriptInputModel, Script
             ProcessBuilder processBuilder = new ProcessBuilder(command);
             return processBuilder.start();
         } catch (IOException e) {
+            LOG.warn("Can't start process", e);
             throw new UncheckedIOException("Error while starting external process", e);
         }
     }
